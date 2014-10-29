@@ -13,7 +13,6 @@ RUN \
             --yes \
             --no-install-recommends \
             --no-install-suggests \
-   procps \
    boinc-client && \
 
 # Clean up packages.
@@ -23,5 +22,11 @@ RUN \
 # Simple script to get things done.
 ADD start_boinc.sh /start_boinc.sh
 
+# Data volume.
+ONBUILD VOLUME /data
+
+# Getting ready.
+WORKDIR /data
+
 # Default command.
-ENTRYPOINT ["/bin/bash", "start_boinc.sh"]
+ENTRYPOINT ["/bin/bash", "/start_boinc.sh"]
