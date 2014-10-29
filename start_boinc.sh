@@ -15,8 +15,8 @@ done
 
 # Start BOINC.
 /usr/bin/boinc \
-  --no_priority_change \
-  --skip_cpu_benchmarks \
   --attach_project \
-  $PROJECT \
-  $WEAK_KEY
+    $PROJECT \
+    $WEAK_KEY \
+  --no_priority_change
+
