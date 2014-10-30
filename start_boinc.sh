@@ -1,6 +1,6 @@
 # Defaults.
 PROJECT='www.worldcommunitygrid.org'
-WEAK_KEY='949787_26d9d15438e75ca7be6aa03e94a9613e'
+WEAK_KEY='949787_15ca7825fb58f9d01b6ad15221c3f048'
 
 # Argument parsing.
 while getopts ':p:w' flag
