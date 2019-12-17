@@ -1,11 +1,11 @@
-FROM debian:wheezy
+FROM debian:jessie
 
 MAINTAINER Ozzy Johnson <docker@ozzy.io>
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # Versions.
-ENV BOINC_CLIENT 7.0.27+dfsg-5
+ENV BOINC_CLIENT 7.4.23+dfsg-1+deb8u1
 
 # Update and install minimal.
 RUN \
